@@ -1,21 +1,29 @@
-#This is code of kbc we get reward if the correct answer and lost when its wrong
-
-print("Welcome To Kaun Banega Corepati")
+# Created by = Ronit
+# github username = Ronithere
+from time import sleep
+print("Welcome To Quiz Program In Hindi by Ronit")
 print('\n')
-name=(input("Enter Your Name:"))
-print("Hi",name,"Are You Ready To Play")
-Ques=("Q1.When Does India Got Its Independence ?")
-option=(" \n a)1956 \n b)1947 \n c)1950 \n d)None Of The Above")
-enter=input("Enter Yes or No:")
-if [enter=="Yes","yes"]:
-print(Ques)
+name=(input("Tumhara Name Kya Hai : "))
+print("Hi",name,"Jawab de paoge ? ")
+Ques=("Q. PUBG PC konse coding language me banaya tha ? ?")
+option=(" \n python \n c++ \n java \n None")
+enter=input("Enter Ha or Nahi:")
+if [enter=="Haa","Haa"]:
+    print("badhiya toh yeh hai sawal: ")
+    print("loading...")
+    sleep(2)
+    print(Ques)
 
-elif (enter=="No","no"):
-print("ThankYou Have A Nice Day ")
+elif (enter=="Nahi","Nahi"):
+    print("koi baat nahi, Bye")
 
 print(option)
-Answer=input("Enter The Correct Option:")
-if(Answer=='1947'):
-print("The Answer is Correct\n \n You Won 100 rupees Cheque")
+Answer=input("Sahi option choose kar:")
+if(Answer=='c++'):
+    print("ruk...")
+    sleep(2)
+    print("sahi jawab \n Tumhe 100 points milte hai")
 else:
-print("The Answer is Wrong \n \n You Lost The Game")
+    print("ruk...")
+    sleep(2)
+    print("Galat jawab \n Tum Hargaye")
